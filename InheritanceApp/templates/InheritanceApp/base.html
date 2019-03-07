@@ -9,12 +9,23 @@
 <body>
 
 <nav>
-
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'details' %}">Movie Details</a>
+    <a href="{% url 'poster' %}">Movie Poster</a>
+    <a href="{% url 'comments' %}">Comments</a>
 </nav>
+
+<h1>Go see Code School The Movie</h1>
 
 {% block header %}
 <h1>Testing to see if it works</h1>
 {% endblock header %}
+
+
+{% block footer %}
+<p>This movie has not been rated</p>
+{% endblock footer %}
+
 
 </body>
 </html>

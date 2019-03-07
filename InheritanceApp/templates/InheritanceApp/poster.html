@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'InheritanceApp/base.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block header %}
+    <h1>Movie Poster</h1>
+    <img src="{% static 'InheritanceApp/images/download.jpeg' %}" alt="people">
+{% endblock header %}
