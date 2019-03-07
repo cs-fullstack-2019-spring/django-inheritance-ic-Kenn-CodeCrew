@@ -1,0 +1,15 @@
+{% extends 'InheritanceApp/carDealer/base.html' %}
+
+{% block content %}
+<h1>Inventory of what we have:</h1>
+{% if allCars %}
+
+    {% for eachCar in allCars %}
+        <li>{{eachCar.year}} {{eachCar.make}} {{eachCar.model}}</li>
+    {% endfor %}
+
+{% else %}
+    <h3>Sorry. We're out of cars</h3>
+{% endif %}
+
+{% endblock content %}
